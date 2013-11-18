@@ -1,0 +1,20 @@
+--- !ruby/object:Podcast
+author: Имя Фамилия
+title: Название подкаста
+subtitle: Краткое описание
+pattern: '*.mp3'
+content_type: audio/mpeg
+base_url: 'http://nas/podcasts/irg'
+image: 'podcast.jpg'
+name:
+  :regexp: !ruby/regexp '/(.+?)(\.[^.]*$|$)/'
+  :interpolate: 'Глава #{$1}'
+categories:
+- :category: Audio
+- :category: Кгиги
+  :categories:
+    - :category: Подкатегория
+description: |
+  Аэрофотосъёмка ландшафта уже выявила земли богачей и процветающих крестьян.
+  
+  Всё ускоряющаяся эволюция компьютерных технологий предъявила жёсткие требования к производителям как собственно вычислительной техники, так и периферийных устройств.
