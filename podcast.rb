@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require 'uri'
 require 'yaml'
 require 'rss'
@@ -94,9 +96,9 @@ class Podcast
 
     end
 
-    puts rss
+    #puts rss
 
-    #File.open(@podcast_outfile, "w") { |f| f.write(contents) }
+    File.open(@podcast_outfile, "w") { |f| f.write(contents) }
 
   end
 
